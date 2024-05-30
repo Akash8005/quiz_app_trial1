@@ -15,13 +15,29 @@ class GradientContainer extends StatelessWidget {
           end: Alignment.bottomRight,
         ),
       ),
-      child: const Center(
-        child: Text(
-          "Om Namah Shivaya",
-          style: TextStyle(
-            fontSize: 30,
-            color: Colors.black,
-          ),
+      child: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Image.asset(
+              'assets/images/quiz-logo.png',
+              width: 300,
+            ),
+            const SizedBox(
+              height: 50,
+            ),
+            const Text(
+              "Learn Flutter the Fun Way!",
+              style: TextStyle(color: Colors.white),
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              child: const Text("->Start Quiz"),
+            ),
+          ],
         ),
       ),
     );
